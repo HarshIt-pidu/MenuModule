@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtCategoryItemAddTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Category - Add Item"
+        android:textAlignment="center"
+        android:textColor="@color/purple_main"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTextCategoryItemAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Name*"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCategoryItemAddTitle" />
+
+    <EditText
+        android:id="@+id/etCategoryItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item Name"
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTextCategoryItemAddName" />
+
+    <TextView
+        android:id="@+id/txtTextCategoryItemDescName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Description"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCategoryItemName" />
+
+    <EditText
+        android:id="@+id/etCategoryItemDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item Description"
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTextCategoryItemDescName" />
+
+    <TextView
+        android:id="@+id/txtcategoryItemSellPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Sell Price"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCategoryItemDesc" />
+
+    <EditText
+        android:id="@+id/etCategoryItemSellPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item "
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtcategoryItemSellPrice" />
+
+    <TextView
+        android:id="@+id/txtcategoryItemCostPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:text="Sell Price"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCategoryItemDesc" />
+
+    <EditText
+        android:id="@+id/etCategoryItemCostPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item "
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtcategoryItemSellPrice" />
+
+    <TextView
+        android:id="@+id/btnCusineType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_baseline_share_24"
+        android:text="Cusine Type"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoryItemSellPrice" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/shimmerGrey"
+        app:layout_constraintTop_toBottomOf="@+id/btnCusineType" />
+
+    <Button
+        android:id="@+id/btnCategoryItemAddOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_baseline_share_24"
+        android:text="Add on"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btnCusineType" />
+
+    <TextView
+        android:id="@+id/txtTextCategoryItemAllDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="All day"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoryItemAddOn" />
+
+    <Button
+        android:id="@+id/btnCategoryItenAllDayToggle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_baseline_share_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategoryItemAddOn" />
+
+    <TextView
+        android:id="@+id/txtTextCategoryItemStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Start Time"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTextCategoryItemAllDay" />
+
+    <TextView
+        android:id="@+id/txtCategoryItemStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="00:00"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTextCategoryItemAllDay" />
+
+    <TextView
+        android:id="@+id/txtTextCategoryItemEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="End Time"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTextCategoryItemStartTime" />
+
+    <TextView
+        android:id="@+id/txtCategoryItemEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="00:00"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCategoryItemStartTime" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/shimmerGrey"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategoryItemEndTime" />
+
+
+    <TextView
+        android:id="@+id/txtTextCategoryItemSuperAppVisibleAddon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Super App Visible"
+        android:textColor="@color/shimmerGrey"
+        android:layout_marginTop="40dp"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategoryItemEndTime" />
+
+    <TextView
+        android:id="@+id/txtTextCategoryItemDisableMenuAddon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Visible in Menu"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTextCategoryItemSuperAppVisibleAddon" />
+
+    <Button
+        android:id="@+id/btnSuperAppVisibleCategiryItemToggle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_baseline_share_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategoryItemEndTime" />
+
+    <Button
+        android:id="@+id/btnDisableMenuCategoryItemToggle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_baseline_share_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuperAppVisibleCategiryItemToggle" />
+
+    <Button
+        android:id="@+id/btnAddonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_main"
+        android:text="Add"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDisableMenuCategoryItemToggle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/checkVeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple_main"
+            android:layoutDirection="rtl"
+            android:text="Veg"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4d4d4e"
+            app:layout_constraintTop_toBottomOf="@id/checkVeg" />
+
+        <RadioButton
+            android:id="@+id/checkNonVeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple_main"
+            android:layoutDirection="rtl"
+            android:text="Non veg"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/checkVeg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4d4d4e"
+            app:layout_constraintTop_toBottomOf="@id/checkNonVeg" />
+
+        <RadioButton
+            android:id="@+id/checkEgg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple_main"
+            android:layoutDirection="rtl"
+            android:text="Egg"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/checkNonVeg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4d4d4e"
+            app:layout_constraintTop_toBottomOf="@id/checkEgg" />
+
+        <Button
+            android:id="@+id/btnSelectCuisineTypeMenuAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkEgg" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtMenuAddonAddTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Addon - Add Item"
+        android:textAlignment="center"
+        android:textColor="@color/purple_main"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTextMenuAddonAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Name*"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMenuAddonAddTitle" />
+
+    <EditText
+        android:id="@+id/etAddonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item Name"
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTextMenuAddonAddName" />
+
+    <TextView
+        android:id="@+id/txtTextMenuAddonDescName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Description"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAddonName" />
+
+    <EditText
+        android:id="@+id/etAddonDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item Description"
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTextMenuAddonDescName" />
+
+    <TextView
+        android:id="@+id/txtAddonSellPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Sell Price"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAddonDesc" />
+
+    <EditText
+        android:id="@+id/etAddonSellPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item "
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAddonSellPrice" />
+
+    <TextView
+        android:id="@+id/txtAddonCostPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Description"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/etAddonCostPrice"
+        app:layout_constraintTop_toBottomOf="@id/etAddonDesc" />
+
+    <EditText
+        android:id="@+id/etAddonCostPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Item Description"
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAddonCostPrice" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_main"
+        android:text="Veg"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxEgg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/shimmerGrey"
+        app:layout_constraintTop_toBottomOf="@+id/etAddonSellPrice" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egg"
+        android:backgroundTint="@color/purple_main"
+        android:textColor="@color/shimmerGrey"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxNonVeg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxVeg"
+        app:layout_constraintTop_toBottomOf="@+id/etAddonSellPrice" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNonVeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non-Veg"
+        android:backgroundTint="@color/purple_main"
+        android:textColor="@color/shimmerGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxEgg"
+        app:layout_constraintTop_toBottomOf="@+id/etAddonCostPrice" />
+
+    <TextView
+        android:id="@+id/txtSuperAppVisibleAddonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Super App Visible"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxVeg" />
+
+    <TextView
+        android:id="@+id/txtDisableMenuAddonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Visible in Menu"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSuperAppVisibleAddonText" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnSuperAppVisibleAddonToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/purple_main"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNonVeg" />
+
+    <Button
+        android:id="@+id/btnDisableMenuAddonToggle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_baseline_toggle_on_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuperAppVisibleAddonToggle" />
+
+    <Button
+        android:id="@+id/btnAddonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_main"
+        android:text="Add"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDisableMenuAddonToggle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F5"
+    tools:context=".fragments.MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/actionBarList"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnListBack"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_icon_backarrow"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Menu"
+            android:textColor="@color/purple_main"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/btnListBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgListSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/ic_icon_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@id/actionBarList"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imgEmptyDisplay"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/empty_display"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/btnAdd"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btnAllStores" />-->
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnAllStores"-->
+    <!--        style="?android:spinnerStyle"-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="26dp"-->
+    <!--        android:drawableEnd="@drawable/ic_icon_dropdown_with_circle"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:maxLines="1"-->
+    <!--        android:text="All Stores"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="14sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/actionBarSalaryList" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnDate"-->
+    <!--        style="?android:spinnerStyle"-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="26dp"-->
+    <!--        android:backgroundTint="@color/purple_main"-->
+    <!--        android:drawableEnd="@drawable/ic_icon_dropdown_with_circle"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:maxLines="1"-->
+    <!--        android:text="Jan 2022"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="14sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/actionBarSalaryList" />-->
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/actionBarList">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+            <include layout="@layout/shimmer_effect_salary_list" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBarList">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenuList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="160dp"
+            tools:listitem="@layout/menu_list_single_item" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btnListAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/purple_main"
+        android:text="+ Add"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

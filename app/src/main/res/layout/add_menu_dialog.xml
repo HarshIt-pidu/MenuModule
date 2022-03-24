@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtMenuCategoryAddTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Add Menu"
+        android:textAlignment="center"
+        android:textColor="@color/purple_main"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTextMenuCategoryAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Name your menu *"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMenuCategoryAddTitle" />
+
+    <EditText
+        android:id="@+id/etCategoryNameAddMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Enter menu name"
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTextMenuCategoryAddName" />
+
+    <TextView
+        android:id="@+id/txtTextMenuCategoryDescName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Description about your menu"
+        android:textColor="@color/purple_main"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCategoryNameAddMenu" />
+
+    <EditText
+        android:id="@+id/etCategoryDescAddMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/shimmerGrey"
+        android:hint="Enter menu description"
+        android:textColor="@color/shimmerGrey"
+        android:textColorHint="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txtTextMenuCategoryDescName" />
+
+
+    <TextView
+        android:id="@+id/txtCuisineTypeAddMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4d4d4e"
+        android:text="Cuisine Type"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/ic_icon_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoryDescAddMenu" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#6C6C6C"
+        app:layout_constraintTop_toBottomOf="@id/txtCuisineTypeAddMenu" />
+
+    <TextView
+        android:id="@+id/txtAccessibilityAddMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4d4d4e"
+        android:text="Accessibility"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/ic_icon_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuisineTypeAddMenu" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#6C6C6C"
+        app:layout_constraintTop_toBottomOf="@id/txtAccessibilityAddMenu" />
+
+    <TextView
+        android:id="@+id/txtCategoryAddMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4d4d4e"
+        android:text="Category"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/ic_icon_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccessibilityAddMenu" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#6C6C6C"
+        app:layout_constraintTop_toBottomOf="@id/txtCategoryAddMenu" />
+
+
+    <TextView
+        android:id="@+id/txtAllDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="All Day"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCategoryAddMenu" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnAllDayToggleAddMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:theme="@style/CustomSwitchTheme"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategoryAddMenu" />
+
+    <TextView
+        android:id="@+id/txtStartTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Start Time"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAllDayText" />
+
+    <TextView
+        android:id="@+id/txtStartTimeAddMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="00:00"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAllDayText" />
+
+    <TextView
+        android:id="@+id/txtEndTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="End Time"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtStartTimeText" />
+
+    <TextView
+        android:id="@+id/txtEndTimeAddMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="00:00"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtStartTimeAddMenu" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/shimmerGrey"
+        app:layout_constraintTop_toBottomOf="@id/txtEndTimeAddMenu" />
+
+    <TextView
+        android:id="@+id/txtSuperAppVisibleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Super App Visible"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewLine" />
+
+    <TextView
+        android:id="@+id/txtDisableMenuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Super App Visible"
+        android:textColor="@color/shimmerGrey"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSuperAppVisibleText" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnSuperAppVisibleAddMenuToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/purple_main"
+        android:theme="@style/CustomSwitchTheme"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnDisableAddMenuToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:theme="@style/CustomSwitchTheme"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuperAppVisibleAddMenuToggle" />
+
+    <Button
+        android:id="@+id/btnAddMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_main"
+        android:text="Submit"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDisableAddMenuToggle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
